@@ -1,0 +1,30 @@
+# Virtual environment
+venv/
+.env
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+*.swp
+.DS_Store
+
+# Logs and debug files
+logs/
+*.log
+
+# Byte-compiled / optimized / DLL files
+*.py[cod]
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# VSCode & PyCharm specific files
+.vscode/
+.idea/
+
+# Docker related files (if using Docker)
+*.dockerignore
+
+# Build and dependency management
+dist/
+build/

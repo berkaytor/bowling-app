@@ -6,8 +6,6 @@ Unit tests have been written using Jest and enzyme.
 
 Enter your bowling scores [here](https://blundells-bowling.herokuapp.com/)!
 
-![Blundell's Bowling](https://i.imgur.com/yj6ESJK.png)
-
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Run Locally:
@@ -22,14 +20,11 @@ Run Locally:
 
 To run tests, type in `yarn test`
 
-![tests](https://i.imgur.com/0Xelgm8.gif)
-
 Things To Improve On:
 -----
 
 - Test Game component by mocking redux elements.
 - Refactor updateCumulativeScore function (as it's rather ugly!)
-- Render 'X' if strike and '/' if a spare is bowled.
 - Add a multiplayer mode.
 
 Bowling Rules:

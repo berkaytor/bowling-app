@@ -1,0 +1,23 @@
+# Use an official Node.js runtime as a parent image
+FROM node:18-alpine
+
+# Set the working directory in the container
+WORKDIR /app
+
+# Copy the package.json and yarn.lock files into the container
+COPY frontend/package.json frontend/yarn.lock ./
+
+# Install any needed packages specified in package.json
+RUN yarn install
+
+# Copy the frontend source code into the container
+COPY frontend /app
+
+# Build the React app
+RUN yarn build
+
+# Expose the port the app runs on
+EXPOSE 3000
+
+# Command to run the frontend
+CMD ["yarn", "start"]
